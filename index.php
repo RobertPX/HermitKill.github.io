@@ -4,10 +4,6 @@ include 'lib/conexion.php';
 
 ini_set('error_reporting', 0);
 
-if (!isset($_SESSION['nomuser'])) {
-  header("Location: login.php");
-}
-
 if (isset($_SESSION['tipo'])) {
   $admi = "si";
 }
