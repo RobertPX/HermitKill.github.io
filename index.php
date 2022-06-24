@@ -1,5 +1,15 @@
 <?php
+session_start();
+include 'lib/conexion.php';
 
+ini_set('error_reporting', 0);
+
+if (isset($_SESSION['tipo'])) {
+  $admi = "si";
+}
+else{
+  $admi = "no";
+}
 ?>
 
 <!DOCTYPE html>
